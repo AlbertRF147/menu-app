@@ -33,3 +33,17 @@ No solsament digitalitzar els seus menus sino tambe de:
 
 La meva idea es crear una web app que permeti crear menus digitals de forma sencilla, intuitiva, i molt rapida. La prioritat es no complicar-se gens al principi i intentar tindre alguna cosa llesta en el menor temps possible. Obviament necessitem que sigui escalable per poguer afegir-hi mes funcionalitat en un futur.
 
+
+
+
+Em sembla de puta mare (perdon por el retraso, he anat moltíssim liat aquestes setmanes). 
+
+Hi ha alguns punts que em deixen inquiet perquè no sé com els avordariem. Amb Gatsby/Next podem crear un frontal sense problema, que tiri d'un CMS (tipo Netlify-CMS (propi), Strapi, o d'un ja fet, DatoCMS, Contentful, etc) on els restaurants puguin afegirr els seus menus. 
+
+Vaig vomitant el que em passa pel cap i em corregeixes el que creguis, que ara mateix tinc el cervell fet papilla:
+
+És a dir, a nivell pràctic, tindriem client-only routes on els restaurants entrarien al seu dashboard i anirien ficant plats, descripció, categoria (postre, primer, segon, beguda, etc) i preu. Un cop es guardés a la base de dades, això hauria de tirar una mena de webhook cap al frontal per tornar a buildejar les pàgines (aixo es el que li vec punts dèbils), ja que son estàtiques. I bueno, tema funcionalicats de la web no seran gaire complexes (sliders per aqui, fotos pepines, testimonials, etc). Pel tema de poca connexió, Gatsby te algun plugin per servir contingut offline, fent servir web servers (imagino que next també ho deu tenir). 
+
+Quan vulguis ho anem movent o ho parlem amb més calma.
+
+Cuidat tio
